@@ -1,0 +1,4 @@
+const API_ADDRESS = "http://localhost:3030";
+const HTTP_REQUEST_TIMEOUT = 4000;
+
+export { API_ADDRESS, HTTP_REQUEST_TIMEOUT };
