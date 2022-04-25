@@ -88,7 +88,7 @@ describe("HttpClient tests", () => {
     const objId = 99;
     const objText = "ninety nine";
 
-    const response = await new HttpClient(HttpEndpoint.PLURAL)
+    const response = await new HttpClient<TestObject>(HttpEndpoint.PLURAL)
       .method(HttpMethod.POST)
       .data({
         id: objId,

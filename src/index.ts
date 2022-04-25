@@ -1,4 +1,4 @@
-import { AxiosRequestConfig } from "axios";
+import { AxiosRequestConfig, AxiosResponse } from "axios";
 import * as qs from "qs";
 import { HttpEndpoint } from "./HttpEndpoint";
 import { HttpMethod } from "./HttpMethod";
@@ -150,7 +150,7 @@ export class HttpClient<T> {
   /**
    * Executes the request.
    */
-  invoke() {
+  invoke(): Promise<AxiosResponse<T>> {
     const requestHeaders = {
       "Content-Type": HttpContentType.JSON,
     };
