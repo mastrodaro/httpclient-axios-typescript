@@ -19,16 +19,16 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v3
-        - name: Setup node
-          uses: actions/setup-node@v3
-          with:
-            node-version: 16
-            cache: npm
-            cache-dependency-path: package-lock.json
-        - name: Install deps
-          run: npm install
-        - name: Test code
-          run: npm run test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install deps
+        run: npm install
+      - name: Test code
+        run: npm run test
