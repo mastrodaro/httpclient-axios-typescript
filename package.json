@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",

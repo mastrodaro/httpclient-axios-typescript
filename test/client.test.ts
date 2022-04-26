@@ -29,7 +29,6 @@ const configureClient = () => {
     },
     defaultTimeout: HTTP_REQUEST_TIMEOUT,
     errorHandler: (error) => {
-      console.log(error);
       if (error.response) {
         return Promise.resolve(error.response);
       }
